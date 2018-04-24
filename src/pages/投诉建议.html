@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>投诉建议</title>
+
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+         @@include('./include/page-hd.html', { "title": "投诉建议", "menu": "" })
+    </div>
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells my-top">
+            <div class="weui-cell">
+                <div class="weui-cell__img">
+                    <img src="../assets/images/tx00.jpg" alt="" />
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="wx_title">~小情调天使~ <img src="../assets/images/man.png" class="sex_icon" /> </div>
+                    <div class="wm_title">ID: 1215412 </div>
+                    <div class="wm_title">等级：普通用户 </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells mt0 border-none mar_cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <lable class="weui-label fs28">手机号码</lable>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入手机号码" />
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <lable class="weui-label fs28">商家名称</lable>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入投诉商家名称" />
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <lable class="weui-label fs28">建议或意见</lable>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入您的建议或意见" />
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <lable class="x_title">备注留言</lable>
+                    <textarea class="weui-textarea small-textarea" placeholder="请输入备注留言信息" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="foot_box">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <a href="javascript:;" class="weui-btn weui-btn_primary">立即投诉</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+
+</script>
+</body>
+</html>

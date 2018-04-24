@@ -1,20 +1,40 @@
 
 .my-top{
-    background-color:#fff;
-    padding-bottom:80px;
-    background-position:left bottom;
-    .weui-top_img{
+    margin-top:0;
+    background-image: linear-gradient(138deg,
+    #954bf7 0%,
+    #b74bd6 50%,
+    #da4bb3 100%),
+    linear-gradient(
+            #ff3520,
+            #ff3520);
+    .weui-cell__img{
         border-radius:50%;
-        width:125px;
-        height:125px;
+        margin-right:28px;
         img{
+            width:140px;
+            height:140px;
             border-radius:50%;
+            vertical-align: middle;
         }
     }
     .weui-top_name{
         div{
             color:#fff;
         } 
+    }
+    .weui-cell{
+        padding:70px 30px;
+    }
+    .weui-cell__bd{
+        div{
+            padding:4px 0;
+        }
+    }
+    .sex_icon{
+        width:24px;
+        height:24px;
+        vertical-align: middle;
     }
 }
 .my_icon{
@@ -29,5 +49,99 @@
         background:#fff;
         margin:30px;
         border-radius:15px;
+    }
+}
+
+.foot_box{
+    height:130px;
+    background:#fff;
+    .weui-cell{
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        padding:20px 80px;
+        box-shadow: 0px -1px 20px rgba(160, 109, 255, .2);
+    }
+}
+.small-textarea{
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    font-size: 26px;
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    margin:20px 0;
+    padding:24px;
+    box-sizing: border-box;
+}
+.mar_cells{
+    margin-top:-20px;
+    border-radius:20px 20px 0 0;
+}
+
+.weui-cell_select{
+    padding:10px 26px;
+    .weui-cell__bd:after{
+        right:30px;
+    }
+    .weui-select{
+        padding:0;
+    }
+}
+.input-blod::placeholder{
+    font-weight:500;
+}
+.input-blod{
+    font-size:28px;
+    font-weight:600;
+}
+.input-cell{
+    .weui-cell__hd{
+        font-size: 50px;
+        color: #000000;
+        font-weight:600;
+        margin-right:10px;
+    }
+    .weui-input{
+        font-size:50px;
+        color: #000000;
+        font-weight:600;
+    }
+    .weui-input::placeholder{
+        font-weight:500;
+        font-size:40px;
+    }
+}
+.there-grids{
+    padding:15px;
+    .small-grid{
+        float:left;
+        width:33.3%;
+        box-sizing: border-box;
+        padding:15px;
+    }
+    .selet_box{
+        border-radius: 15px;
+        border: solid 1px #7c69ff;
+        text-align: center;
+        font-size: 30px;
+        color: #7b6aff;
+        padding:20px 0;
+        font-weight:600;
+        box-sizing: border-box;
+    }
+    .checked{
+        .selet_box{
+            background-image: linear-gradient(87deg,
+            #7b69ff 0%,
+            #a16fff 50%,
+            #cc75ff 100%,
+            #e58a9c 100%,
+            #fd9f39 100%),
+            linear-gradient(
+                    #fd5241,
+                    #fd5241);
+            border:none;
+            color:#fff;
+        }
     }
 }
