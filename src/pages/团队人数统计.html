@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    @@include('./include/header.html')
+    <title>团队人数统计</title>
+
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+         @@include('./include/page-hd.html', { "title": "团队人数统计", "menu": "" })
+    </div>
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells mt0">
+            <div class="weui-cell">
+                <div class="weui-cell__dian">
+                    <span class="icon_box"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">开始日期</div>
+                    <input class="weui-input" type="text" placeholder="请选择开始日期" value="" id="input_start" />
+                </div>
+                <label class="weui-cell__ft left_bor" for="input_start">
+                    <img src="../assets/images/my_icon6.png" class="data_icon" alt="" />
+                </label>
+            </div>
+            <div class="weui-cell wei_border">
+                <div class="weui-cell__dian">
+                    <span class="icon_box icon_box-red"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <div class="x_title">结束日期</div>
+                    <input class="weui-input" type="text" placeholder="请选择开始日期" value="" id="input_end" />
+                </div>
+                <label class="weui-cell__ft left_bor" for="input_end">
+                    <img src="../assets/images/my_icon6.png" class="data_icon" alt="" />
+                </label>
+            </div>
+
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__bd " style="padding:10px 30px;">
+                <a href="javascript:;" class="weui-btn weui-btn_primary">开始查询</a>
+            </div>
+        </div>
+        <div class="weui-cells mt0">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <span class="shu_icon"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <span class="x_title">查询结果</span>
+                </div>
+            </div>
+            <div class="weui-cells mt0" id="search_list">
+
+                <!-- 没有数据，和没有权限 显示的提示图片-->
+
+                <!--<div class="show_erro">-->
+                <!--<img src="../assets/images/no_data.jpg" />-->
+                <!--<img src="../assets/images/no_vip.jpg" />-->
+                <!--</div>-->
+
+                <!-- 没有数据，和没有权限-->
+
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队一级营销商数 </span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队二级营销商数</span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队三级营销商数  </span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队商家数      </span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队金牌会员数  </span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队银牌会员数  </span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队铜牌会员数     </span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">团队粉丝会员数      </span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">10个</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+@@include('./include/footer.html')
+
+<script>
+    $("#input_start").datetimePicker({
+        title: '请选择日期',
+        yearSplit: '-',
+        monthSplit: '-',
+        times: function () {
+            return [  // 自定义的时间
+            ];
+        },
+        onChange: function (picker, values, displayValues) {
+            console.log(values)
+        }
+    });
+    $("#input_end").datetimePicker({
+        title: '请选择日期',
+        yearSplit: '-',
+        monthSplit: '-',
+        times: function () {
+            return [  // 自定义的时间
+            ];
+        },
+        onChange: function (picker, values, displayValues) {
+            console.log(values)
+        }
+    });
+</script>
+</body>
+</html>
