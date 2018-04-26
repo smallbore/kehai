@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head>
-    @@include('./include/header.html')
-    <title>日返红统计</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title>商家营业额统计</title>
 
 </head>
 <body>
 <div class="page">
     <div class="page-hd">
-         @@include('./include/page-hd.html', { "title": "日返红统计", "menu": "" })
+         <div class="header">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">商家营业额统计</div>
+    <div class="header-right">
+        <a href="javascript:;"></a>
+    </div>
+</div>
     </div>
     <div class="page-bd">
         <!-- 页面内容-->
@@ -58,23 +71,29 @@
                 <!-- 没有数据，和没有权限 显示的提示图片-->
 
                 <!--<div class="show_erro">-->
-                    <!--<img src="../assets/images/no_data.jpg" />-->
-                    <!--<img src="../assets/images/no_vip.jpg" />-->
+                <!--<img src="../assets/images/no_data.jpg" />-->
+                <!--<img src="../assets/images/no_vip.jpg" />-->
                 <!--</div>-->
 
                 <!-- 没有数据，和没有权限-->
 
-
                 <div class="weui-cell">
                     <div class="weui-cell__bd">
-                        <div class="m_title">本人</div>
-                        <div class="m_title padd-top">a. 本人分红权: 10</div>
-                        <div class="m_title padd-top">b. 本人待返额: ￥100.00元</div>
-                        <div class="m_title padd-top">c. 本人已返额：￥500.00元</div>
-                        <div class="m_title padd-top">d. 本人累计分红额：￥1000.00元</div>
+                        <span class="m_title">商家营业额</span>
                     </div>
-                    <div class="weui-cell__ft"></div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">￥100.00元</span>
+                    </div>
                 </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <span class="m_title">商家让利额</span>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span class="m_title">￥800.00元</span>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -82,7 +101,8 @@
 
 </div>
 
-@@include('./include/footer.html')
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
 
 <script>
     $("#input_start").datetimePicker({
